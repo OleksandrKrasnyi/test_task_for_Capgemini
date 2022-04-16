@@ -8,8 +8,8 @@ def password_checker(*args: str) -> list:
     """
     Takes password from CLI-command and checks it for certain requirements.
     Prints if password is weak or strong.
-    If password is weak, gives recommendations for improvements.
-    :return: <List> unfulfilled_requirements_list containing unfulfilled requirements for testing.
+    If password is weak, gives statements for improvements.
+    :return: <List> unfulfilled_requirements_list containing unfulfilled requirements.
     """
     unfulfilled_requirements_list = []
 

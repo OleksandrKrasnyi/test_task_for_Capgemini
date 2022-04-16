@@ -7,8 +7,6 @@ from password_requirements import password_requirements as pr
 def password_checker(*args: str) -> list:
     """
     Takes password from CLI-command and checks it for certain requirements.
-    Prints if password is weak or strong.
-    If password is weak, gives statements for improvements.
     :return: <List> unfulfilled_requirements_list containing unfulfilled requirements.
     """
     unfulfilled_requirements_list = []
@@ -48,6 +46,10 @@ if __name__ == "__main__":
 
     if result is not None:
         if len(result) > 0:
+            """
+            Prints if password is weak or strong.
+            If password is weak, gives statements for improvements.
+            """
             print("Weak password:")
             print(*result, sep='\n')
         else:
